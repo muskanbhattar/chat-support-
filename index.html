@@ -1,13 +1,13 @@
-<!DOCTYPE html> 
+  <!DOCTYPE html> 
   <html lang="en">                                                                                                                                                                                                                                  
-  <head>          
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>                                                                                                                                                                                                                                            
+      <meta charset="UTF-8" />                                                                                                                                                                                                                      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>                                                                                                                                                                       
       <title>Customer Support Chat</title>                                                                                                                                                                                                          
       <style>                                                                                                                                                                                                                                       
           * { box-sizing: border-box; margin: 0; padding: 0; }                                                                                                                                                                                      
                                                                                                                                                                                                                                                     
-          body {  
+          body {                                                                                                                                                                                                                                    
               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;                                                                                                                                                                         
               padding: 20px;                                                                                                                                                                                                                        
               background-color: #fff;                                                                                                                                                                                                               
@@ -16,7 +16,7 @@
           .container {                                                                                                                                                                                                                              
               display: flex;                                                                                                                                                                                                                        
               gap: 20px;                                                                                                                                                                                                                            
-              max-width: 1200px;                                                                                                                                                                                                                    
+              max-width: 1200px;
               margin: 0 auto;                                                                                                                                                                                                                       
           }                                                                                                                                                                                                                                         
                                                                                                                                                                                                                                                     
@@ -24,12 +24,12 @@
                   
           .right-sidebar {                                                                                                                                                                                                                          
               flex: 1;
-              border-left: 1px solid #ddd;
+              border-left: 1px solid #ddd;                                                                                                                                                                                                          
               padding-left: 20px;                                                                                                                                                                                                                   
           }                                                                                                                                                                                                                                         
                                                                                                                                                                                                                                                     
           .alert-box {                                                                                                                                                                                                                              
-              background-color: #eef7ff;
+              background-color: #eef7ff;                                                                                                                                                                                                            
               border: 1px solid #cce5ff;                                                                                                                                                                                                            
               padding: 12px;                                                                                                                                                                                                                        
               font-size: 13px;                                                                                                                                                                                                                      
@@ -64,11 +64,11 @@
               color: white;                                                                                                                                                                                                                         
               font-weight: bold;                                                                                                                                                                                                                    
               cursor: pointer;                                                                                                                                                                                                                      
-              font-size: 13px;
-          }
-
-          .btn-available { background-color: #3e783b; }
-          .btn-unavailable { background-color: #dcdcdc; color: #888; cursor: not-allowed; }
+              font-size: 13px;                                                                                                                                                                                                                      
+          }                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                    
+          .btn-available { background-color: #3e783b; }                                                                                                                                                                                             
+          .btn-unavailable { background-color: #dcdcdc; color: #888; cursor: not-allowed; }                                                                                                                                                         
                                                                                                                                                                                                                                                     
           .info-col { margin-left: 20px; }                                                                                                                                                                                                          
           .title { font-weight: bold; font-size: 14px; color: #222; }                                                                                                                                                                               
@@ -77,7 +77,7 @@
           .sidebar-box {                                                                                                                                                                                                                            
               border: 1px solid #ddd;                                                                                                                                                                                                               
               padding: 15px;                                                                                                                                                                                                                        
-              margin-bottom: 20px;                                                                                                                                                                                                                  
+              margin-bottom: 20px;
               border-radius: 4px;                                                                                                                                                                                                                   
               background: #fafafa;                                                                                                                                                                                                                  
           }                                                                                                                                                                                                                                         
@@ -93,58 +93,62 @@
               margin-bottom: 20px;                                                                                                                                                                                                                  
           }                                                                                                                                                                                                                                         
                                                                                                                                                                                                                                                     
-          .upgrade-btn {                                                                                                                                                                                                                            
-              background: #28a745;                                                                                                                                                                                                                  
-              color: white;                                                                                                                                                                                                                         
-              border: none;                                                                                                                                                                                                                         
-              padding: 8px 12px;                                                                                                                                                                                                                    
-              border-radius: 3px;                                                                                                                                                                                                                   
-              cursor: pointer;                                                                                                                                                                                                                      
-              margin-top: 10px;                                                                                                                                                                                                                     
-          }                                                                                                                                                                                                                                         
-      </style>                                                                                                                                                                                                                                      
-  </head>                                                                                                                                                                                                                                           
-  <body>                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                    
-      <div class="container">                                                                                                                                                                                                                       
-                                                                                                                                                                                                                                                    
-          <!-- LEFT SECTION -->                                                                                                                                                                                                                     
+          .upgrade-btn {
+              background: #28a745;
+              color: white;
+              border: none;
+              padding: 8px 12px;
+              border-radius: 3px;
+              cursor: pointer;
+              margin-top: 10px;
+          }
+      </style>
+  </head>
+  <body>
+
+      <div class="container">
+
+          <!-- LEFT SECTION -->
           <div class="left-section">
                                                                                                                                                                                                                                                     
-              <div class="alert-box">
+              <div class="alert-box">                                                                                                                                                                                                               
                   Please use chat for Priority 1 issues only. Priority 1 (down system) and Priority 2 (urgent issues) should be called into Customer Support. Please use chat for short, simple questions. Issues that require significant research 
   will be taken offline and worked on as a regular case. If the appropriate chat channel shows as Unavailable, please try back at a later time, or open a case, send us an email, or call Customer Support.                                         
               </div>
                                                                                                                                                                                                                                                     
-              <div class="lang-header">English</div>                                                                                                                                                                                                
+              <!-- ENGLISH — availability checked dynamically -->                                                                                                                                                                                   
+              <div class="lang-header">English</div>
               <div class="chat-row">                                                                                                                                                                                                                
-                  <button id="btn-English" class="btn btn-available" onclick="loadChatScript('English')">Start Chat</button>                                                                                                                        
+                  <button id="btn-English" class="btn btn-unavailable" disabled>Checking Status...</button>                                                                                                                                         
                   <div class="info-col">                                                                                                                                                                                                            
                       <div class="title">Symphony / BLUEcloud</div>                                                                                                                                                                                 
                       <span class="subtitle">Acquisitions, Cataloging, Serials, NCIP Server</span>                                                                                                                                                  
                   </div>                                                                                                                                                                                                                            
               </div>                                                                                                                                                                                                                                
                                                                                                                                                                                                                                                     
-              <div class="lang-header">French</div>                                                                                                                                                                                                 
-              <div class="chat-row">
-                  <button id="btn-French" class="btn btn-available" onclick="loadChatScript('French')">Start Chat</button>                                                                                                                          
+              <!-- FRENCH — availability checked dynamically (will show Unavailable if no agents) -->                                                                                                                                               
+              <div class="lang-header">French</div>
+              <div class="chat-row">                                                                                                                                                                                                                
+                  <button id="btn-French" class="btn btn-unavailable" disabled>Checking Status...</button>                                                                                                                                          
                   <div class="info-col">                                                                                                                                                                                                            
                       <div class="title">Symphony</div>                                                                                                                                                                                             
                       <span class="subtitle">Support en Français</span>                                                                                                                                                                             
                   </div>                                                                                                                                                                                                                            
               </div>                                                                                                                                                                                                                                
                                                                                                                                                                                                                                                     
-              <div class="lang-header">Spanish</div>                                                                                                                                                                                                
-              <div class="chat-row">
-                  <button class="btn btn-unavailable" disabled>Unavailable</button>                                                                                                                                                                 
+              <!-- SPANISH — always unavailable -->                                                                                                                                                                                                 
+              <div class="lang-header">Spanish</div>
+              <div class="chat-row">                                                                                                                                                                                                                
+                  <button class="btn btn-unavailable" disabled>Unavailable</button>
                   <div class="info-col">                                                                                                                                                                                                            
-                      <div class="title">Symphony</div>                                                                                                                                                                                             
+                      <div class="title">Symphony</div>
                       <span class="subtitle">Spanish</span>                                                                                                                                                                                         
                   </div>                                                                                                                                                                                                                            
               </div>                                                                                                                                                                                                                                
                                                                                                                                                                                                                                                     
-              <div class="lang-header">Chinese Simplified</div>                                                                                                                                                                                     
-              <div class="chat-row">
+              <!-- CHINESE — always unavailable -->                                                                                                                                                                                                 
+              <div class="lang-header">Chinese Simplified</div>
+              <div class="chat-row">                                                                                                                                                                                                                
                   <button class="btn btn-unavailable" disabled>Unavailable</button>                                                                                                                                                                 
                   <div class="info-col">                                                                                                                                                                                                            
                       <div class="title">Symphony, Horizon, OPAC / Discovery</div>                                                                                                                                                                  
@@ -157,7 +161,7 @@
           <!-- RIGHT SIDEBAR -->                                                                                                                                                                                                                    
           <div class="right-sidebar">
                                                                                                                                                                                                                                                     
-              <div class="sidebar-alert">
+              <div class="sidebar-alert">                                                                                                                                                                                                           
                   If you are reporting a DOWN SYSTEM or urgent issue,                                                                                                                                                                               
                   please call Customer Support so we can immediately assist you.                                                                                                                                                                    
               </div>                                                                                                                                                                                                                                
@@ -177,10 +181,11 @@
                   
       <script type="text/javascript">                                                                                                                                                                                                               
                   
-          const chatConfigs = {                                                                                                                                                                                                                     
-              'English': {
+          // --- 1. CONFIGURATION — exact same values from VF page ---                                                                                                                                                                              
+          const chatConfigs = {
+              'English': {                                                                                                                                                                                                                          
                   devName: 'Enhanced_Web_Chat',                                                                                                                                                                                                     
-                  orgId: '00DEa00000MQPJ3',
+                  orgId: '00DEa00000MQPJ3',                                                                                                                                                                                                         
                   siteUrl: 'https://sirsidynix--newfullsdb.sandbox.my.site.com/ESWEnhancedWebChat1770071826931',                                                                                                                                    
                   scrt2URL: 'https://sirsidynix--newfullsdb.sandbox.my.salesforce-scrt.com',                                                                                                                                                        
                   language: 'en_US',                                                                                                                                                                                                                
@@ -199,44 +204,97 @@
           let currentlyLoadedChat = null;                                                                                                                                                                                                           
           let isSwitching = false;
                                                                                                                                                                                                                                                     
-          function loadChatScript(languageName) {                                                                                                                                                                                                   
+          // --- 2. AVAILABILITY CHECK ---                                                                                                                                                                                                          
+          // Replicates exactly what Apex controller does:                                                                                                                                                                                          
+          // calls sirsidynix--newfullsdb.sandbox.my.salesforce-scrt.com/embeddedservice/v2/agent-availability                                                                                                                                      
+          // checks success → response → agentAvailable                                                                                                                                                                                             
+          async function checkAvailability(lang) {                                                                                                                                                                                                  
+              const config = chatConfigs[lang];                                                                                                                                                                                                     
+              const btn = document.getElementById('btn-' + lang);                                                                                                                                                                                   
+                                                                                                                                                                                                                                                    
+              try {                                                                                                                                                                                                                                 
+                  const url = 'https://sirsidynix--newfullsdb.sandbox.my.salesforce-scrt.com/embeddedservice/v2/agent-availability?orgId=00DEa00000MQPJ3&esConfigName=' + config.devName;                                                           
+                                                                                                                                                                                                                                                    
+                  const response = await fetch(url, {                                                                                                                                                                                               
+                      method: 'GET',                                                                                                                                                                                                                
+                      mode: 'cors'                                                                                                                                                                                                                  
+                  });                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                    
+                  const data = await response.json();                                                                                                                                                                                               
+                  console.log('Availability response for ' + lang + ':', data);
+                                                                                                                                                                                                                                                    
+                  if (data.success && data.response && data.response.agentAvailable === true) {                                                                                                                                                     
+                      btn.className = 'btn btn-available';                                                                                                                                                                                          
+                      btn.disabled = false;                                                                                                                                                                                                         
+                      btn.innerText = 'Start Chat';                                                                                                                                                                                                 
+                      btn.onclick = function () { loadChatScript(lang); };                                                                                                                                                                          
+                  } else {                                                                                                                                                                                                                          
+                      btn.className = 'btn btn-unavailable';                                                                                                                                                                                        
+                      btn.disabled = true;                                                                                                                                                                                                          
+                      btn.innerText = 'Unavailable';                                                                                                                                                                                                
+                  }                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                    
+              } catch (e) {                                                                                                                                                                                                                         
+                  console.error('Availability check failed for ' + lang + ':', e);
+                  btn.className = 'btn btn-unavailable';                                                                                                                                                                                            
+                  btn.disabled = true;                                                                                                                                                                                                              
+                  btn.innerText = 'Unavailable';                                                                                                                                                                                                    
+              }                                                                                                                                                                                                                                     
+          }       
+                                                                                                                                                                                                                                                    
+          // --- 3. CHECK AVAILABILITY ON PAGE LOAD ---                                                                                                                                                                                             
+          window.onload = function () {
+              Object.keys(chatConfigs).forEach(function (lang) {                                                                                                                                                                                    
+                  checkAvailability(lang);                                                                                                                                                                                                          
+              });                                                                                                                                                                                                                                   
+          };                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                    
+          // --- 4. LOAD CHAT SCRIPT ---                                                                                                                                                                                                            
+          function loadChatScript(languageName) {
               const config = chatConfigs[languageName];                                                                                                                                                                                             
                                                                                                                                                                                                                                                     
               if (currentlyLoadedChat === languageName) {                                                                                                                                                                                           
+                  console.log('Script already loaded for ' + languageName + '. Launching window...');                                                                                                                                               
                   window.embeddedservice_bootstrap.utilAPI.launchChat();                                                                                                                                                                            
                   return;                                                                                                                                                                                                                           
-              }   
+              }                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                     
               if (currentlyLoadedChat !== null) {                                                                                                                                                                                                   
-                  if (isSwitching) return;
+                  if (isSwitching) {
+                      console.log('Switch already in progress...');                                                                                                                                                                                 
+                      return;                                                                                                                                                                                                                       
+                  }                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                     
-                  if (confirm('Switching chat language. Continue?')) {
-                      isSwitching = true;                                                                                                                                                                                                           
-                      window.postMessage({ type: 'END_CHAT' }, '*');
-                      setTimeout(() => {
-                          isSwitching = false;
-                          loadChatScript(languageName);
-                      }, 1500);
-                  }
-                  return;
-              }
-
-              console.log('Injecting script for: ' + languageName);
+                  if (confirm('Switching chat language. Continue?')) {                                                                                                                                                                              
+                      isSwitching = true;
+                      console.log('Switching chat WITHOUT reload');                                                                                                                                                                                 
+                      window.postMessage({ type: 'END_CHAT' }, '*');                                                                                                                                                                                
+                      setTimeout(() => {                                                                                                                                                                                                            
+                          isSwitching = false;                                                                                                                                                                                                      
+                          loadChatScript(languageName);                                                                                                                                                                                             
+                      }, 1500);                                                                                                                                                                                                                     
+                  }                                                                                                                                                                                                                                 
+                  return;                                                                                                                                                                                                                           
+              }                                                                                                                                                                                                                                     
+                  
+              console.log('Injecting script for: ' + languageName);                                                                                                                                                                                 
               currentlyLoadedChat = languageName;
-
-              const btn = document.getElementById('btn-' + languageName);                                                                                                                                                                           
-              const originalText = btn.innerText;
-              btn.innerText = 'Loading...';                                                                                                                                                                                                         
-              btn.disabled = true;                                                                                                                                                                                                                  
-  
-              const readyListener = function () {                                                                                                                                                                                                   
-                  console.log('Salesforce MIAW API is Ready!');
-                  btn.innerText = originalText;                                                                                                                                                                                                     
-                  btn.disabled = false;                                                                                                                                                                                                             
                                                                                                                                                                                                                                                     
-                  let launchAttempts = 0;                                                                                                                                                                                                           
-                  const forceLaunchInterval = setInterval(function () {                                                                                                                                                                             
-                      launchAttempts++;                                                                                                                                                                                                             
+              const btn = document.getElementById('btn-' + languageName);                                                                                                                                                                           
+              const originalText = btn.innerText;                                                                                                                                                                                                   
+              btn.innerText = 'Loading...';                                                                                                                                                                                                         
+              btn.disabled = true;
+
+              const readyListener = function () {
+                  console.log('Salesforce MIAW API is Ready!');
+                  btn.innerText = originalText;
+                  btn.disabled = false;
+
+                  let launchAttempts = 0;
+                  const forceLaunchInterval = setInterval(function () {
+                      launchAttempts++;
+                      console.log('Knocking on chat window... (Attempt ' + launchAttempts + ')');
+                                                                                                                                                                                                                                                    
                       if (window.embeddedservice_bootstrap && window.embeddedservice_bootstrap.utilAPI) {                                                                                                                                           
                           try {                                                                                                                                                                                                                     
                               window.embeddedservice_bootstrap.utilAPI.launchChat();                                                                                                                                                                
@@ -244,7 +302,10 @@
                               console.log('UI not fully drawn yet...');                                                                                                                                                                             
                           }                                                                                                                                                                                                                         
                       }                                                                                                                                                                                                                             
-                      if (launchAttempts >= 8) clearInterval(forceLaunchInterval);                                                                                                                                                                  
+                                                                                                                                                                                                                                                    
+                      if (launchAttempts >= 8) {                                                                                                                                                                                                    
+                          clearInterval(forceLaunchInterval);                                                                                                                                                                                       
+                      }                                                                                                                                                                                                                             
                   }, 500);                                                                                                                                                                                                                          
                                                                                                                                                                                                                                                     
                   window.removeEventListener('onEmbeddedMessagingReady', readyListener);                                                                                                                                                            
@@ -256,9 +317,19 @@
               scriptTag.type = 'text/javascript';
               scriptTag.src = config.scriptSrc;                                                                                                                                                                                                     
                                                                                                                                                                                                                                                     
+              scriptTag.onerror = function () {
+                  console.error('Failed to load bootstrap script for: ' + languageName);                                                                                                                                                            
+                  currentlyLoadedChat = null;                                                                                                                                                                                                       
+                  btn.innerText = 'Unavailable';                                                                                                                                                                                                    
+                  btn.disabled = true;                                                                                                                                                                                                              
+                  btn.className = 'btn btn-unavailable';                                                                                                                                                                                            
+                  window.removeEventListener('onEmbeddedMessagingReady', readyListener);                                                                                                                                                            
+              };                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    
               scriptTag.onload = function () {                                                                                                                                                                                                      
                   try {                                                                                                                                                                                                                             
                       embeddedservice_bootstrap.settings.language = config.language;                                                                                                                                                                
+                      console.log('Starting init()...');                                                                                                                                                                                            
                       embeddedservice_bootstrap.init(                                                                                                                                                                                               
                           config.orgId,                                                                                                                                                                                                             
                           config.devName,                                                                                                                                                                                                           
@@ -275,27 +346,39 @@
               };                                                                                                                                                                                                                                    
                                                                                                                                                                                                                                                     
               document.body.appendChild(scriptTag);                                                                                                                                                                                                 
-          }
+          }       
                                                                                                                                                                                                                                                     
+          // --- 5. CLEANUP HANDLER ---                                                                                                                                                                                                             
           window.addEventListener('message', function (event) {                                                                                                                                                                                     
-              if (event.data && event.data.type === 'END_CHAT') {
+              if (event.data && event.data.type === 'END_CHAT') {                                                                                                                                                                                   
+                  console.log('Received END_CHAT');                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                    
                   try {                                                                                                                                                                                                                             
                       if (window.embeddedservice_bootstrap && window.embeddedservice_bootstrap.userVerificationAPI) {                                                                                                                               
                           window.embeddedservice_bootstrap.userVerificationAPI.clearSession()                                                                                                                                                       
                               .then(() => {                                                                                                                                                                                                         
+                                  console.log('Session cleared');                                                                                                                                                                                   
+                                                                                                                                                                                                                                                    
                                   if (window.embeddedservice_bootstrap && window.embeddedservice_bootstrap.utilAPI) {                                                                                                                               
                                       window.embeddedservice_bootstrap.utilAPI.removeAllComponents();                                                                                                                                               
                                   }                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                    
                                   document.querySelectorAll('script[src*="bootstrap"]').forEach(s => s.remove());                                                                                                                                   
                                   delete window.embeddedservice_bootstrap;                                                                                                                                                                          
                                   document.querySelectorAll('[class*="embedded"]').forEach(el => el.remove());                                                                                                                                      
+                                                                                                                                                                                                                                                    
                                   currentlyLoadedChat = null;                                                                                                                                                                                       
+                                  console.log('FULL CLEANUP DONE');                                                                                                                                                                                 
                               })                                                                                                                                                                                                                    
-                              .catch(() => window.location.reload());                                                                                                                                                                               
+                              .catch(err => {
+                                  console.error('Error clearing session', err);                                                                                                                                                                     
+                                  window.location.reload();                                                                                                                                                                                         
+                              });                                                                                                                                                                                                                   
                       } else {                                                                                                                                                                                                                      
                           window.location.reload();                                                                                                                                                                                                 
                       }                                                                                                                                                                                                                             
                   } catch (e) {                                                                                                                                                                                                                     
+                      console.error('Cleanup failed', e);                                                                                                                                                                                           
                       window.location.reload();                                                                                                                                                                                                     
                   }                                                                                                                                                                                                                                 
               }                                                                                                                                                                                                                                     
@@ -304,4 +387,4 @@
       </script>                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                     
   </body>                                                                                                                                                                                                                                           
-  </html>         
+  </html> 
