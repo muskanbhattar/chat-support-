@@ -1,13 +1,13 @@
-<!DOCTYPE html>                                                                                                                                                                                                                                   
-  <html lang="en">
-  <head>                                                                                                                                                                                                                                            
+<!DOCTYPE html> 
+  <html lang="en">                                                                                                                                                                                                                                  
+  <head>          
       <meta charset="UTF-8" />                                                                                                                                                                                                                      
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>                                                                                                                                                                       
       <title>Customer Support Chat</title>                                                                                                                                                                                                          
-      <style>     
+      <style>                                                                                                                                                                                                                                       
           * { box-sizing: border-box; margin: 0; padding: 0; }                                                                                                                                                                                      
                                                                                                                                                                                                                                                     
-          body {                                                                                                                                                                                                                                    
+          body {  
               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;                                                                                                                                                                         
               background-color: #f4f4f4;                                                                                                                                                                                                            
           }                                                                                                                                                                                                                                         
@@ -21,7 +21,7 @@
           }                                                                                                                                                                                                                                         
                                                                                                                                                                                                                                                     
           .chat-wrapper {                                                                                                                                                                                                                           
-              max-width: 1200px;
+              max-width: 1200px;                                                                                                                                                                                                                    
               margin: 30px auto;                                                                                                                                                                                                                    
               background: #fff;                                                                                                                                                                                                                     
               border: 1px solid #ddd;                                                                                                                                                                                                               
@@ -29,9 +29,9 @@
               overflow: hidden;                                                                                                                                                                                                                     
               box-shadow: 0 2px 8px rgba(0,0,0,0.1);                                                                                                                                                                                                
           }                                                                                                                                                                                                                                         
-                                                                                                                                                                                                                                                    
+   
           iframe#sf-chat {                                                                                                                                                                                                                          
-              width: 100%;                                                                                                                                                                                                                          
+              width: 100%;
               height: 700px;                                                                                                                                                                                                                        
               border: none;                                                                                                                                                                                                                         
               display: block;                                                                                                                                                                                                                       
@@ -45,7 +45,7 @@
       <div class="chat-wrapper">                                                                                                                                                                                                                    
           <iframe 
               id="sf-chat"                                                                                                                                                                                                                          
-              src="https://storm-b097d5168ac1af.my.salesforce-setup.com/ChatSupport/apex/CompositeChatPage"
+              src="https://storm-b097d5168ac1af.my.salesforce-sites.com/ChatSupport/apex/CompositeChatPage"                                                                                                                                         
               frameborder="0"                                                                                                                                                                                                                       
               scrolling="auto"                                                                                                                                                                                                                      
               allow="microphone; camera"                                                                                                                                                                                                            
@@ -54,18 +54,18 @@
       </div>                                                                                                                                                                                                                                        
                                                                                                                                                                                                                                                     
       <script>                                                                                                                                                                                                                                      
-          window.addEventListener('message', function(event) {                                                                                                                                                                                      
+          window.addEventListener('message', function(event) {
                                                                                                                                                                                                                                                     
-              // Only accept messages from your Salesforce Site domain                                                                                                                                                                              
-              if (event.origin !== 'https://storm-b097d5168ac1af.my.salesforce-sites.com') return;                                                                                                                                        
+              // Only accept messages from your Salesforce Site domain
+              if (event.origin !== 'https://storm-b097d5168ac1af.my.salesforce-sites.com') return;                                                                                                                                                  
                                                                                                                                                                                                                                                     
               const iframe = document.getElementById('sf-chat');                                                                                                                                                                                    
                                                                                                                                                                                                                                                     
               if (event.data && event.data.type === 'RESIZE') {                                                                                                                                                                                     
                   iframe.style.height = (event.data.height + 50) + 'px';
               }                                                                                                                                                                                                                                     
-          });                                                                                                                                                                                                                                       
+          });
       </script>                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                     
-  </body>         
-  </html>              
+  </body>                                                                                                                                                                                                                                           
+  </html>               
